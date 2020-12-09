@@ -24,10 +24,10 @@ import xml.etree.ElementTree as etree
 
 
 #!!red|str!! >> <span class="red">spam</span>'
-SPAN_CLASS = r'[!]{2}(?P<class>.+)[|](?P<text>.+)[!]{2}'
+SPAN_CLASS = r'[!]{2}(?P<class>.+?)[|](?P<text>.+?)[!]{2}'
 
 #{{summary}} >> <summary>summary_title</summary>
-SUMMARY = r'[{]{2}(?P<title>.+)[}]{2}'
+SUMMARY = r'[{]{2}(?P<title>.+?)[}]{2}'
 
 #--div--
 
